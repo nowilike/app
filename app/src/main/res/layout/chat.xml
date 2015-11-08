@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="@string/tab_taxRefund"-->
+            <!--android:textSize="20sp"/>-->
+          <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="@string/link_taxRefund"-->
+            <!--android:textSize="15sp"/>-->
+
+        <!-- 定义第一个表格布局，指定第3列允许收缩，第2列允许拉伸 -->
+        <TableLayout android:id="@+id/TableLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft ="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop ="5dp"
+            android:shrinkColumns="1"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/text1_country"
+                    android:textSize="16sp"/>
+                <AutoCompleteTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft ="5dp"
+                    android:paddingRight="5dp"
+                    android:ems="10"
+                    android:completionThreshold="1"
+                    android:entries="@array/countries"
+                    android:singleLine="true"
+                    android:hint="@string/text1_countryAuto"
+                    android:textColorHint="@color/material_grey_A200"
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_column="1"
+                    android:background="@drawable/text_shape" />
+                <!-- 定义了一个Spinner组件，指定显示该Spinner组件的数组 -->
+                <Spinner
+                    android:id="@+id/countrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/countries"
+                    android:prompt="@string/tip"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/text1_number"
+                    android:textSize="16sp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:hint="@string/text1_numberAuto"
+                    android:textColorHint="@color/material_grey_A200"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:background="@drawable/text_shape"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="5"
+                    android:background="@drawable/search"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>

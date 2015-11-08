@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_settings"
+        android:textSize="8pt"
+        android:shadowColor="#aa5"
+        android:shadowRadius="1"
+        android:shadowDx="5"
+        android:shadowDy="5"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/web_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+        <EditText
+            android:id="@+id/et_u_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:text="@string/link_taxRefund"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:layout_toLeftOf="@id/web_button"
+            android:layout_toStartOf="@id/web_button"
+            android:layout_alignBottom="@id/web_button"
+            android:hint = "@string/text2_link_global_blue" />
+
+    </RelativeLayout>
+    <!-- 显示页面的WebView组件 -->
+    <WebView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+ 
+</LinearLayout>

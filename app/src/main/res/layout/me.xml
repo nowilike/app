@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     
+    <!--<TextView -->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="@string/tab_self"-->
+        <!--android:textSize="20sp"     />-->
+      <!--<TextView -->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="@string/link_taxRefund"-->
+        <!--android:textSize="15sp"      />-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/moneySpinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_money"
+            android:prompt="@string/tip"/>
+        <Spinner
+            android:id="@+id/moneySpinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_money2"
+            android:prompt="@string/tip"/>
+        <Button
+            android:id="@+id/moneyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_search"
+            android:textSize="8pt"
+            android:shadowColor="#aa5"
+            android:shadowRadius="1"
+            android:shadowDx="5"
+            android:shadowDy="5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/moneyTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/text_money"
+        android:textSize="15sp"      />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_bkg" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hint_alarmValueLow"      />
+        <EditText
+            android:id="@+id/textAlarmValueLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:ems="3"
+            android:text="@string/text_alarmValueLow" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hint_alarmValueHigh"      />
+        <EditText
+            android:id="@+id/textAlarmValueHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:ems="3"
+            android:text="@string/text_alarmValueHigh" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hint_alarmPeriod"      />
+        <EditText
+            android:id="@+id/textAlarmPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:ems="2"
+            android:text="@string/text_alarmPeriod" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hint_second"      />
+
+        <ToggleButton
+            android:id="@+id/moneyButtonAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_alarm"
+            android:textOff="@string/tbutton_alarmOff"
+            android:textOn="@string/tbutton_alarmOn"
+            android:checked="false"
+            android:textSize="8pt"
+            android:paddingTop="2dp"
+            android:shadowColor="#aa5"
+            android:shadowRadius="1"
+            android:shadowDx="5"
+            android:shadowDy="5"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_bkg">
+
+        <Spinner
+            android:id="@+id/moneySpinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_money3"
+            android:prompt="@string/tip"/>
+        <Spinner
+            android:id="@+id/moneySpinner4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_money2"
+            android:prompt="@string/tip"/>
+        <Button
+            android:id="@+id/moneyButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_search"
+            android:textSize="8pt"
+            android:paddingTop="2dp"
+            android:shadowColor="#aa5"
+            android:shadowRadius="1"
+            android:shadowDx="5"
+            android:shadowDy="5"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/moneyTextView2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/text_money"
+        android:textSize="15sp"      />
+
+
+    <TextView
+        android:id="@+id/moneyTextView3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:background="@drawable/textview_bkg"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>
+</ScrollView>

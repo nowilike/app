@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">兔用</string>
+
+    <string name="action_subtitle">给兔用的</string>
+    <string name="action_settings">设置</string>
+    <string name="action_exit">退出</string>
+    <string name="action_login">登入</string>
+    <string name="action_logout">登出</string>
+
+    <string name="tab_taxRefund">退税</string>
+    <string name="tab_period">周期</string>
+    <string name="tab_undefined">待定</string>
+    <string name="tab_self">我</string>
+
+    <string name="link_taxRefund">https://secure.globalblue.com/secure/traveller-services/refundtracker/</string>
+    <string name="link_baidu">http://www.baidu.com/</string>
+
+    <string name="text2_link_global_blue">请输入网址</string>
+
+    <string name="text1_number">退税单号</string>
+    <string name="text1_country">退税国家</string>
+    <string name="text1_countryAuto">请输入/选择退税国家</string>
+    <string name="text1_numberAuto">请输入退税单号</string>
+    <string name="tip">兔用</string>
+
+    <string name="button_search">查询</string>
+    <string name="button_settings">设置</string>
+
+    <string name="button_alarm">预警</string>
+    <string name="tbutton_alarmOff">打开预警</string>
+    <string name="tbutton_alarmOn">关闭预警</string>
+    <string name="hint_alarmPeriod">间隔</string>
+    <string name="hint_second">秒</string>
+    <string name="hint_alarmValueLow">最低</string>
+    <string name="hint_alarmValueHigh">最高</string>
+    <string name="text_alarmValueLow">8.0</string>
+    <string name="text_alarmValueHigh">6.0</string>
+    <string name="text_alarmPeriod">20</string>
+
+    <string name="button_explore">访问网页</string>
+    <string name="button_download">下载图片</string>
+
+    <string name="image_content">This is a picture!</string>
+
+    <string name="text_money">"币种：    \n现汇买入：\n现钞买入：\n现汇卖出：\n现钞卖出：\n银行中间价：\n更新日期：\n更新时间：  "</string>
+</resources>

@@ -1,0 +1,17 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header android:fragment="com.xbtz.ilikenow.SettingsActivity$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general"
+        android:summary="设置应用的相关选项" />
+
+    <header android:fragment="com.xbtz.ilikenow.SettingsActivity$NotificationPreferenceFragment"
+        android:title="@string/pref_header_notifications"
+        android:summary="设置通知的相关选项" />
+
+    <header android:fragment="com.xbtz.ilikenow.SettingsActivity$DataSyncPreferenceFragment"
+        android:title="@string/pref_header_layout"
+        android:summary="设置显示界面的相关选项" />
+
+</preference-headers>
